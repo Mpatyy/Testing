@@ -1,7 +1,7 @@
 :root{
     /* en los sizes, poner el tamaño de la imagen*/
-    --sizeX: 320px;
-    --sizeY: 320px;
+    --sizeX: 192px;
+    --sizeY: 128px;
     
     --posX: 0px;
     --posY: 0px;
