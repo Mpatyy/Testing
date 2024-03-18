@@ -2,11 +2,10 @@ let mover = false;
 let posX=0;
 let posY=0;
 
-async function bucleMover() {
+async function bucleMover(offsetX, offsetY) {
     mover=true
     let sizeX = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sizeX'));
     let sizeY = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sizeY'));
-    let offsetY = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--offsetY'));
 
     while (mover==true) {
         posX-= 3;
@@ -21,8 +20,8 @@ async function bucleMover() {
         }
 
 
-        document.documentElement.style.setProperty('--posX', posX+'px');
-        document.documentElement.style.setProperty('--posY', (posY-offsetY)+'px');
+        document.documentElement.style.setProperty('--posX', (posX+offsetX)+'px');
+        document.documentElement.style.setProperty('--posY', (posY+offsetY)+'px');
         await sleep(50);
     }
 }

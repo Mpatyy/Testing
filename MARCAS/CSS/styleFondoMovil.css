@@ -1,9 +1,7 @@
 :root{
     /* en los sizes, poner el tamaño de la imagen*/
-    --sizeX: 400px;
-    --sizeY: 400px;
-
-    --offsetY: 50px;
+    --sizeX: 320px;
+    --sizeY: 320px;
     
     --posX: 0px;
     --posY: 0px;
@@ -22,5 +20,5 @@
     z-index: -10;
 
     transform: translate(var(--posX),var(--posY));
-    background-image: url('imagenFondo.png');
+    background-image: url('/MARCAS/CSS/imagenFondoMovil.png');
 }
