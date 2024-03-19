@@ -6,8 +6,11 @@ async function bucleMover(offsetX, offsetY) {
     mover=true
     let sizeX = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sizeX'));
     let sizeY = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sizeY'));
-
+    
     while (mover==true) {
+        if (document.hidden == true) {
+            return;
+        }
         posX-= 3;
         posY-= 1;
         if (posX<= -sizeX) {
