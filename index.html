@@ -5,20 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Enlaces hacia Páginas Web</title> 
         <link rel="stylesheet" href="style.css">
-    </head>
-<body>
 
-<div class="container">
-    <h1>Accesibilidad y Usabilidad</h1>
-    <div class="link-container">
-        <a href="Accesibilidad/accesibilidad.html" class="link">Accesibilidad</a>
-        <a href="Usabilidad/usabilidad.html" class="link">Usabilidad</a>
+        <link rel="stylesheet" href="/MARCAS/CSS/styleFondoMovil.css">
+        <script src="/fondoMovil.js"></script>
+    </head>
+    
+    <div id="fondoMovil">
     </div>
-</div>
-<div class="container">
-    <h1>Lenguaje de Marcas</h1>
-    <div class="link-container">
-        <a href="MARCAS/index.html" class="link">Poesía de ChatGPT</a>
-    </div>
-</div>
+
+    <body onload="bucleMover(0,-50)" onfocus="bucleMover(0,-50)" onblur="parar()">
+
+
+        <div class="container">
+            <h1>Accesibilidad y Usabilidad</h1>
+            <div class="link-container">
+                <a href="Accesibilidad/accesibilidad.html" class="link">Accesibilidad</a>
+                <a href="Usabilidad/usabilidad.html" class="link">Usabilidad</a>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Lenguaje de Marcas</h1>
+            <div class="link-container">
+                <a href="MARCAS/index.html" class="link">Poesía de ChatGPT</a>
+            </div>
+        </div>
+    </body>
 </html>
