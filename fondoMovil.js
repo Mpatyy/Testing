@@ -3,22 +3,20 @@ let posX=0;
 let posY=0;
 
 async function bucleMover(offsetX, offsetY) {
+    if (mover==true) {
+        return;
+    }
     mover=true
     let sizeX = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sizeX'));
     let sizeY = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sizeY'));
     
     while (mover==true) {
-        if (document.hidden == true) {
-            return;
-        }
         posX-= 3;
         posY-= 1;
         if (posX<= -sizeX) {
-            console.log("reiniciando posicion X")
             posX = 0;
         }
         if (posY<= -sizeY) {
-            console.log("reiniciando posicion Y")
             posY = 0;
         }
 
