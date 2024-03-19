@@ -1,6 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif, monospace;
     font-size: large;
+    font-style: oblique;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;

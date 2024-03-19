@@ -1,13 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Aladin", system-ui;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    font-size: large;
+    text-align: center;
 }
 
 header {
+    font-family:"Aladin", system-ui ;
     background-color: #333;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px;
     text-align: center;
 }
@@ -18,14 +21,30 @@ main {
 
 section {
     margin-bottom: 20px;
+    font-family:"Aladin", system-ui;
 }
 
 footer {
     background-color: #333;
+    font-size: larger;
     color: white;
     text-align: center;
     padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
+
 }
+pre {
+    font-family:"Aladin", system-ui ;
+    background-color: #4a4b4e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+   
+
+   
+}
+
+  
